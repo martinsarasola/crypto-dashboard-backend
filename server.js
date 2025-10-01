@@ -8,7 +8,10 @@ const PORT = process.env.PORT || 3001;
 
 app.use(
   cors({
-    origin: "https://coin-pulse-jet.vercel.app/",
+    origin: [
+      "https://coin-pulse-jet.vercel.app/",
+      "https://coin-pulse-jet.vercel.app",
+    ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })

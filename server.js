@@ -3,6 +3,9 @@
 const express = require("express");
 const mysql = require("mysql2/promise"); // Usamos la versión con promesas para async/await
 require("dotenv").config();
+const cors = require("cors");
+
+app.use(cors());
 
 const app = express();
 const PORT = process.env.PORT || 3001; // Render usa la variable de entorno PORT

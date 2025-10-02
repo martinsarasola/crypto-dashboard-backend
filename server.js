@@ -11,7 +11,7 @@ app.use(
     origin: [
       "https://coin-pulse-jet.vercel.app/",
       "https://coin-pulse-jet.vercel.app",
-      "http://localhost:3000/"
+      "http://localhost:3000",
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],

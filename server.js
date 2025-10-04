@@ -81,7 +81,7 @@ async function actualizarMonedas() {
         market_cap = VALUES(market_cap),
         volumen_total = VALUES(volumen_total);
         price_change_percentage_24h = VALUES(price_change_percentage_24h);
-        market_cap_change_24h = VALUES(market_cap_change_24h);
+        market_cap_change_percentage_24h = VALUES(market_cap_change_percentage_24h);
     `;
 
     const [result] = await dbPool.query(sqlQuery, [valoresParaInsertar]);

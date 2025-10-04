@@ -66,6 +66,8 @@ async function actualizarMonedas() {
       moneda.market_cap_rank,
       moneda.market_cap,
       moneda.total_volume,
+      moneda.price_change_percentage_24h,
+      moneda.market_cap_change_percentage_24h,
     ]);
 
     const sqlQuery = `
@@ -78,6 +80,8 @@ async function actualizarMonedas() {
         market_cap_rank = VALUES(market_cap_rank),
         market_cap = VALUES(market_cap),
         volumen_total = VALUES(volumen_total);
+        price_change_percentage_24h = VALUES(price_change_percentage_24h);
+        market_cap_change_24h = VALUES(market_cap_change_24h);
     `;
 
     const [result] = await dbPool.query(sqlQuery, [valoresParaInsertar]);

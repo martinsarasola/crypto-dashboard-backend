@@ -79,8 +79,8 @@ async function actualizarMonedas() {
         precio_actual = VALUES(precio_actual),
         market_cap_rank = VALUES(market_cap_rank),
         market_cap = VALUES(market_cap),
-        volumen_total = VALUES(volumen_total);
-        price_change_percentage_24h = VALUES(price_change_percentage_24h);
+        volumen_total = VALUES(volumen_total),
+        price_change_percentage_24h = VALUES(price_change_percentage_24h),
         market_cap_change_percentage_24h = VALUES(market_cap_change_percentage_24h);
     `;
 

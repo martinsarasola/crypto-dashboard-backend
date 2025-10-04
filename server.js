@@ -71,7 +71,7 @@ async function actualizarMonedas() {
     ]);
 
     const sqlQuery = `
-      INSERT INTO coingecko_data (nombre, simbolo, imagen, precio_actual, market_cap_rank, market_cap, volumen_total)
+      INSERT INTO coingecko_data (nombre, simbolo, imagen, precio_actual, market_cap_rank, market_cap, volumen_total, price_change_percentage_24h, market_cap_change_percentage_24h)
       VALUES ?
       ON DUPLICATE KEY UPDATE
         nombre = VALUES(nombre),
